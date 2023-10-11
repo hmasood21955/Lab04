@@ -83,6 +83,15 @@ int sum = 0;
 
   //7. Compute the summation of even numbers 1 thru n and print
   //   the result; example (n=5): 2 + 4 = 6
+  int sumOfEvens = 0;
+  for (int i = 2; i <= n; i += 2) {
+    sumOfEvens += i;
+    printf("%d", i);
+    if (i < n) {
+      printf(" + ");
+    }
+  }
+  printf(" = %d\n", sumOfEvens);
 
   //8. Write a solution to the following variation of the FizzBuzz
   //   problem.  Print out integers 1 thru n, one to a line, except
@@ -90,6 +99,17 @@ int sum = 0;
   //   If the integer is divisible by 11 print "Bar" instead.  If
   //   the integer is divisible by both 7 and 11, print "FooBar"
   //   instead.
+  for (int i = 1; i <= n; i++) {
+    if (i % 7 == 0 && i % 11 == 0) {
+      printf("FooBar\n");
+    } else if (i % 7 == 0) {
+      printf("Foo\n");
+    } else if (i % 11 == 0) {
+      printf("Bar\n");
+    } else {
+      printf("%d\n", i);
+    }
+  }
 
   return 0;
 }
