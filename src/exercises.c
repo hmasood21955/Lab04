@@ -1,5 +1,5 @@
 /**
- * Author(s):
+ * Author(s):masood hussain
  * Date:
  *
  * This is a series of exercises to introduce loop
