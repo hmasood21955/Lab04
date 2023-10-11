@@ -11,11 +11,15 @@
 int main()
   {
     int i=1;
-    for( ;i<=10;i++)
+    int limit ;
+    printf("enetr the limit");
+    scanf("%d",& limit);
+    
+    for( ;i<=limit;i++)
     {
       for(int j=1;j<=10;j++)
       {
-        printf("%d * %d = %d ", i , j,i*j);
+        printf("%d * %d = %d\n ", i , j,i*j);
 
       }
       printf("***********\n");
