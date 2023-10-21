@@ -11,7 +11,7 @@ int main() {
             int result = i * j;
             printf("%4d", result);
         }
-        
+        printf("\n");
     }
     
 }
